@@ -9,6 +9,7 @@ python = "^3.9"
 fastapi = "^0.85.1"
 uvicorn = {extras = ["standerd"], version = "^0.19.0"}
 SQLAlchemy = "^1.4.42"
+aiosqlite = "^0.17.0"
 
 [tool.poetry.dev-dependencies]
 
