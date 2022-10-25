@@ -186,7 +186,7 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "735b02a1d55d5b61f5e2373ecc67817b2c220083be924739cb214d1903518396"
+content-hash = "f754e59084de628df5799115edc42ea658f28d023d8facce03ad5858a3c534b9"
 
 [metadata.files]
 aiosqlite = []
