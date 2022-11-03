@@ -30,9 +30,6 @@ async def books(book: schemas.BookIn) -> models.Book:
     return new_book
 
 
-@app.post('books/', response_mosel=List[schemas.BookOut])
-async def books(book: schemas.BookIn) -> models.Book:
-    new_book = models.Book(**book.dict())
-    async with session.begin():
-        session.add(new_book)
-    return new_book
+@app.get('books/', response_mosel=List[schemas.BookOut])
+async def books() -> List[models.Book]:
+    return await session.execute(select(models.Book))
